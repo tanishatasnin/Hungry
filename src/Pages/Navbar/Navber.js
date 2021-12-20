@@ -11,7 +11,7 @@ const Navber = () => {
                                       <header >
 <div class="">
 <div class="logo-box ">
-{/* <h1 className="my-logo" >Essential oil's</h1> */}
+<h1 className="my-logo" >HUNGRY</h1>
 
 </div>
 <nav>

@@ -14,6 +14,8 @@ import Navber from './Pages/Navbar/Navber';
 import Login from './Pages/Login/Login/Login';
 import AuthProvider from './Pages/Login/Login/Firebase/Context/AuthProvider';
 import Register from './Pages/Login/Register/Register';
+// import food from './Home/Buy/food';
+import Food from './Home/Buy/Food';
 
 function App() {
   return (
@@ -22,6 +24,10 @@ function App() {
       <BrowserRouter>
       <Navber></Navber>
       <Routes>
+      <Route
+        path="/"
+        element={<Home />}
+      />
       <Route
         path="/home"
         element={<Home />}
@@ -38,7 +44,12 @@ function App() {
         path="/allproducts"
         element={<Pro />}
       />
+      <Route
+        path="//booking/:productId"
+        element={<Food />}
+      />
       </Routes>
+      
       </BrowserRouter>
       </AuthProvider>
     
